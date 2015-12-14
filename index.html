@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FarmaCITY</title>
+
+<script type="application/javascript" src="/recursos/ajax/interpretadorAjax.js"></script>
+<script type="application/javascript" src="/recursos/ajax/saga_ajax.js"></script>
+
+</head>
+<body background="/recursos/imagenes/login_page/img_logo_login.png">
+    <div>
+    	<table width="100%" height="100%" cellspacing="50">
+        	<tr>
+            	<td align="center">
+            			<img src="/recursos/imagenes/iconos/farmacity_logo.png" height="100%"/>
+        		</td>
+           </tr>
+           <tr>
+        		<td align="center" background="/recursos/imagenes/login_page/img_login.png" width="400" height="170">
+          <form name="form_login" id="form_login" onsubmit="pantallaCLF('/login.jsp','div_index_acciones','form_login','Verificando...'); return false;">
+                <label>Usuario</label>&nbsp;
+                <input name="nick" type="text" id="nick" value="" size="15" />
+                &nbsp;<label>Contraseña</label>&nbsp;<input name="pw" type="password" id="pw" size="15" />
+                &nbsp;<button type="submit" onclick="pantallaCLF('/login.jsp','div_index_acciones','form_login','Verificando...');"> entrar</button>
+            </form>
+            <div id="div_index_acciones"></div>
+        		</td>
+       </tr>
+      </table>
+    </div>
+</body>
+</html>
